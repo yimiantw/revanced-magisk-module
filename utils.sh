@@ -433,14 +433,16 @@ build_rv() {
 	# 	fi
 	# fi
 
-	if [ "${args[riplib]}" = true ]; then
-		p_patcher_args+=("--rip-lib x86_64 --rip-lib x86")
-		if [ "$arch" = "arm64-v8a" ]; then
-			p_patcher_args+=("--rip-lib armeabi-v7a")
-		elif [ "$arch" = "arm-v7a" ]; then
-			p_patcher_args+=("--rip-lib arm64-v8a")
-		fi
-	fi
+	# if [ "${args[riplib]}" = true ]; then
+	# 	p_patcher_args+=("--rip-lib x86_64 --rip-lib x86")
+	# 	if [ "$arch" = "arm64-v8a" ]; then
+	# 		p_patcher_args+=("--rip-lib armeabi-v7a")
+	# 	elif [ "$arch" = "arm-v7a" ]; then
+	# 		p_patcher_args+=("--rip-lib arm64-v8a")
+	# 	fi
+	# fi
+ 	p_patcher_args+=("--rip-lib x86_64 --rip-lib x86 --rip-lib armeabi-v7a")
+  
 	if [ "$mode_arg" = module ]; then
 		build_mode_arr=(module)
 	elif [ "$mode_arg" = apk ]; then
