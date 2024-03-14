@@ -21,7 +21,7 @@
     "patchName": "Custom package name",
     "options": [
       {
-        "key": "packageName",
+        "key": "PackageNameYouTube",
         "value": "app.rvx.android.youtube"
       }
     ]
