@@ -16,6 +16,15 @@
         "value": "YouTube"
       }
     ]
+  },
+  {
+    "patchName": "Custom package name",
+    "options": [
+      {
+        "key": "packageName",
+        "value": "app.rvx.android.youtube"
+      }
+    ]
   }
 ]
         
