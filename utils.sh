@@ -251,11 +251,11 @@ dl_apkmirror() {
 			break
 		fi
 	done
-	[ -z "$dlurl" ] && return 1
-	url=$(req "$dlurl" - | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
-	if [ "$apkorbundle" = BUNDLE ] && [[ "$url" != *"&forcebaseapk=true" ]]; then url="${url}&forcebaseapk=true"; fi
-	url=$(req "$url" - | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
-	req "$url" "$output"
+	# [ -z "$dlurl" ] && return 1
+	# url=$(req "$dlurl" - | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
+	# if [ "$apkorbundle" = BUNDLE ] && [[ "$url" != *"&forcebaseapk=true" ]]; then url="${url}&forcebaseapk=true"; fi
+	# url=$(req "$url" - | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
+	req "http://192.168.1.180:8000/apk/google-inc/youtube/youtube-19-09-37-release/com.google.android.youtube_19.09.37-1544809920_minAPI26(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk" "$output"
 }
 get_apkmirror_vers() {
 	local vers apkm_resp
@@ -400,7 +400,7 @@ build_rv() {
 		for dl_p in archive apkmirror uptodown apkmonk; do
 			if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
 			pr "Downloading '${table}' from ${dl_p}"
-			if ! dl_${dl_p} "http://192.168.1.180:8000/apk/google-inc/youtube/youtube-19-09-37-release/com.google.android.youtube_19.09.37-1544809920_minAPI26(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk"; then
+			if ! dl_${dl_p} "${args[${dl_p}_dlurl]}" "$version" "$stock_apk" "$arch" "${args[dpi]}"; then
 				epr "ERROR: Could not download '${table}' from ${dl_p} with version '${version}', arch '${arch}', dpi '${args[dpi]}'"
 				continue
 			fi
