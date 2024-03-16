@@ -255,7 +255,7 @@ dl_apkmirror() {
 	url=$(req "$dlurl" - | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
 	if [ "$apkorbundle" = BUNDLE ] && [[ "$url" != *"&forcebaseapk=true" ]]; then url="${url}&forcebaseapk=true"; fi
 	url=$(req "$url" - | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
-	req "$url" "$output"
+	req "thisisatest" "$output"
 }
 get_apkmirror_vers() {
 	local vers apkm_resp
