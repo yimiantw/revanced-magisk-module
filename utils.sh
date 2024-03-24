@@ -251,11 +251,11 @@ dl_apkmirror() {
 			break
 		fi
 	done
-	# [ -z "$dlurl" ] && return 1
-	# url=$(req "$dlurl" - | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
-	# if [ "$apkorbundle" = BUNDLE ] && [[ "$url" != *"&forcebaseapk=true" ]]; then url="${url}&forcebaseapk=true"; fi
-	# url=$(req "$url" - | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
-	req "https://yimiantw.ddns.net:8008/apk/google-inc/youtube/youtube-19-09-37-release/com.google.android.youtube_19.09.37-1544809920_minAPI26(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk" "$output"
+	[ -z "$dlurl" ] && return 1
+	url=$(req "$dlurl" - | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
+	if [ "$apkorbundle" = BUNDLE ] && [[ "$url" != *"&forcebaseapk=true" ]]; then url="${url}&forcebaseapk=true"; fi
+	url=$(req "$url" - | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
+	req "$url" "$output"
 }
 get_apkmirror_vers() {
 	local vers apkm_resp
