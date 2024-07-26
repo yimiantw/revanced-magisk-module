@@ -1,31 +1,29 @@
 [
-    {
-      "patchName": "Custom branding icon YouTube",
-      "options": [
-        {
-          "key": "AppIcon",
-          "value": "MMT"
-        }
-      ]
-    },
-    {
-      "patchName": "Custom branding name YouTube",
-      "options": [
-        {
-          "key": "AppName",
-          "value": "YouTube"
-        }
-      ]
-    },
-    {
-      "patchName": "Custom package name",
-      "options": [
-        {
-          "key": "PackageNameYouTube",
-          "value": "app.rvx.android.youtube"
-        }
-      ]
-    }
-  ]
-          
-  
+  {
+    "patchName": "Custom branding icon for YouTube",
+    "options": [
+      {
+        "key": "AppIcon",
+        "value": "MMT"
+      }
+    ]
+  },
+  {
+    "patchName": "Custom branding name for YouTube",
+    "options": [
+      {
+        "key": "AppName",
+        "value": "YouTube"
+      }
+    ]
+  },
+  {
+    "patchName": "GmsCore support",
+    "options": [
+      {
+        "key": "PackageNameYouTube",
+        "value": "app.rvx.android.youtube"
+      }
+    ]
+  }
+]
