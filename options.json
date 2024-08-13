@@ -5,23 +5,23 @@
     "options": [
       {
         "key": "AppIcon",
-        "value": "mmt/launcher"
+        "value": "MMT"
       },
       {
         "key": "ChangeHeader",
-        "value": "mmt/header"
+        "value": true
       },
       {
         "key": "CustomHeader",
-        "value": "mmt/header"
+        "value": "MMT"
       },
       {
         "key": "ChangeSplashIcon",
-        "value": "mmt/splash"
+        "value": true
       },
       {
         "key": "RestoreOldSplashAnimation",
-        "value": "false"
+        "value": false
       }
     ]
   },
@@ -39,7 +39,7 @@
     "options": [
       {
         "key": "ExtendedIcon",
-        "value": "mmt/settings"
+        "value": "MMT"
       }
     ]
   },
