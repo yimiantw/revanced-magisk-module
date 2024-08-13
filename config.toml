@@ -6,8 +6,8 @@ patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
 rv-brand = "anddea ReVanced"
 build-mode = "module"
-included-patches = "'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'Hide Shorts dimming' 'MaterialYou'"
-excluded-patches = "'Bypass image region restrictions' 'Change start page' 'Custom Shorts action buttons' 'Custom double tap length' 'Disable QUIC protocol' 'Disable auto captions' 'Enable debug logging' 'Force player buttons background' 'Layout switch' 'Return YouTube Dislike' 'Spoof app version' 'Swipe controls' 'Theme' 'Translations' 'Visual preferences icons'"
+included-patches = "'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'Hide Shorts dimming' 'MaterialYou' 'Theme'"
+excluded-patches = "'Bypass image region restrictions' 'Change start page' 'Custom Shorts action buttons' 'Custom double tap length' 'Disable QUIC protocol' 'Disable auto captions' 'Enable debug logging' 'Force player buttons background' 'Layout switch' 'Return YouTube Dislike' 'Spoof app version' 'Swipe controls' 'Translations'"
 
 # [X]
 # apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"

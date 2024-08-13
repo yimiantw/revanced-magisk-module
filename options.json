@@ -1,11 +1,86 @@
-        
 [
   {
-    "patchName": "Custom branding icon for YouTube",
+    "options": [
+      {
+        "key": "IconType",
+        "value": "rounded"
+      },
+      {
+        "key": "BottomMargin",
+        "value": "0.0dip"
+      },
+      {
+        "key": "ChangeTopButtons",
+        "value": false
+      }
+    ],
+    "patchName": "Overlay buttons"
+  },
+  {
+    "options": [
+      {
+        "key": "OutlineIcon",
+        "value": true
+      }
+    ],
+    "patchName": "SponsorBlock"
+  },
+  {
+    "options": [
+      {
+        "key": "InsertPosition",
+        "value": "About"
+      },
+      {
+        "key": "RVXSettingsMenuName",
+        "value": "ReVanced Extended"
+      }
+    ],
+    "patchName": "Settings for YouTube"
+  },
+  {
+    "options": [
+      {
+        "key": "GmsCoreVendorGroupId",
+        "value": "app.revanced"
+      },
+      {
+        "key": "CheckGmsCore",
+        "value": true
+      },
+      {
+        "key": "PackageNameYouTube",
+        "value": "app.rvx.android.youtube"
+      },
+      {
+        "key": "PackageNameYouTubeMusic",
+        "value": "app.rvx.android.youtube.music"
+      }
+    ],
+    "patchName": "GmsCore support"
+  },
+  {
+    "options": [
+      {
+        "key": "CornerRadius",
+        "value": "8.0dip"
+      },
+      {
+        "key": "BackgroundColor",
+        "value": "?ytChipBackground"
+      },
+      {
+        "key": "StrokeColor",
+        "value": "none"
+      }
+    ],
+    "patchName": "Force snackbar theme"
+  },
+  {
     "options": [
       {
         "key": "AppIcon",
-        "value": "MMT"
+        "value": "mmt"
       },
       {
         "key": "ChangeHeader",
@@ -21,35 +96,40 @@
       },
       {
         "key": "RestoreOldSplashAnimation",
-        "value": false
+        "value": true
       }
-    ]
+    ],
+    "patchName": "Custom branding icon for YouTube"
   },
   {
-    "patchName": "Custom branding name for YouTube",
     "options": [
       {
         "key": "AppName",
         "value": "YouTube"
       }
-    ]
+    ],
+    "patchName": "Custom branding name for YouTube"
   },
   {
-    "patchName": "Visual preferences icons",
     "options": [
       {
         "key": "ExtendedIcon",
-        "value": "mmt/settings"
+        "value": "Extension"
       }
-    ]
+    ],
+    "patchName": "Visual preferences icons"
   },
   {
-    "patchName": "GmsCore support",
-    "options": [
-      {
-        "key": "PackageNameYouTube",
-        "value": "app.rvx.android.youtube"
-      }
-    ]
-  }
+      "options": [
+        {
+          "key": "DarkThemeBackgroundColor",
+          "value": "@android:color/black"
+        },
+        {
+          "key": "LightThemeBackgroundColor",
+          "value": "@android:color/white"
+        }
+      ],
+      "patchName": "Theme"
+    }
 ]
