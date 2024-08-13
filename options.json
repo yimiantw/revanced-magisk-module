@@ -35,15 +35,6 @@
     ]
   },
   {
-    "patchName": "Visual preferences icons",
-    "options": [
-      {
-        "key": "ExtendedIcon",
-        "value": "mmt/settings"
-      }
-    ]
-  },
-  {
     "patchName": "GmsCore support",
     "options": [
       {
