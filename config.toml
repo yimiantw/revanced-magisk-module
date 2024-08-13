@@ -4,11 +4,11 @@ enable-magisk-update = true   # set this to false if you do not want to receive 
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
-rv-brand = "YT-anddea ReVanced"
-build-mode = "both"
-included-patches = "'Predictive back gesture' 'Hide voice search button' 'MaterialYou' 'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'Force disable Shorts dim' 'Force snackbar theme' 'Spoof client' 'Enable OPUS codec' 'Visual preferences icons'"
-excluded-patches = "'Disable landscape mode' 'Header switch' 'Enable debug logging' 'Force video codec' 'Change player flyout panel toggles' 'Alternative thumbnails' 'Append time stamps information' 'Change start page' 'Custom branding heading' 'Custom double tap length' 'Custom playback speed' 'Custom player overlay opacity' 'Default playback speed' 'Disable HDR video' 'Disable QUIC protocol' 'Disable auto captions' 'Disable haptic feedback' 'Disable rolling number animations' 'Disable speed overlay' 'Enable compact controls overlay' 'Enable language switch' 'Enable song search' 'Enable tablet mini player' 'Enable tablet navigation bar' 'Force fullscreen' 'Hide captions button' 'Hide channel avatar section' 'Hide fullscreen panels' 'Hide latest videos button' 'Hide mix playlists' 'Hide seekbar' 'Hide time stamp' 'Layout switch' 'Return YouTube Dislike' 'Spoof device dimensions' 'Swipe controls' 'Translations'"
+rv-brand = "anddea ReVanced"
+build-mode = "module"
+included-patches = "'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'Hide Shorts dimming' 'MaterialYou'"
+excluded-patches = "'Bypass image region restrictions' 'Change start page' 'Custom Shorts action buttons' 'Custom double tap length' 'Disable QUIC protocol' 'Disable auto captions' 'Enable debug logging' 'Force player buttons background' 'Layout switch' 'Return YouTube Dislike' 'Spoof app version' 'Swipe controls' 'Theme' 'Translations'"
 
 # [X]
 # apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
-# included-patches = "'Predictive back gesture' 'Custom package name'"
+# included-patches = "'Open links with app chooser' 'Predictive back gesture'"
