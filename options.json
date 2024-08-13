@@ -13,7 +13,7 @@
       },
       {
         "key": "CustomHeader",
-        "value": "MMT"
+        "value": "mmt/header"
       },
       {
         "key": "ChangeSplashIcon",
@@ -39,7 +39,7 @@
     "options": [
       {
         "key": "ExtendedIcon",
-        "value": "MMT"
+        "value": "mmt/settings"
       }
     ]
   },
