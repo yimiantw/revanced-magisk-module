@@ -10,8 +10,7 @@ included-patches = "'Custom branding icon for YouTube' 'Custom branding name for
 excluded-patches = "'Bypass image region restrictions' 'Change start page' 'Custom Shorts action buttons' 'Custom double tap length' 'Disable QUIC protocol' 'Disable auto captions' 'Enable debug logging' 'Force player buttons background' 'Layout switch' 'Return YouTube Dislike' 'Spoof app version' 'Swipe controls' 'Translations'"
 
 [X]
-apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
-arch = "arm64-v8a"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 build-mode = "both"
 included-patches = "'Predictive back gesture'"
 excluded-patches = "'Hide recommended users'"
