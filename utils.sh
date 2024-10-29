@@ -531,18 +531,26 @@ build_rv() {
 		else
 			patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}.apk"
 		fi
-		if [ "${args[riplib]}" = true ]; then
-			patcher_args+=("--rip-lib x86_64 --rip-lib x86")
-			if [ "$build_mode" = module ]; then
-				patcher_args+=("--rip-lib arm64-v8a --rip-lib armeabi-v7a --unsigned")
+
+		if [ "$build_mode" = module ]; then
+				patcher_args+=("--rip-lib x86_64 --rip-lib x86 --rip-lib arm64-v8a --rip-lib armeabi-v7a --unsigned")
 			else
-				if [ "$arch" = "arm64-v8a" ]; then
-					patcher_args+=("--rip-lib armeabi-v7a")
-				elif [ "$arch" = "arm-v7a" ]; then
-					patcher_args+=("--rip-lib arm64-v8a")
-				fi
-			fi
+				patcher_args+=("--rip-lib x86_64 --rip-lib x86 --rip-lib armeabi-v7a")
 		fi
+
+		# if [ "${args[riplib]}" = true ]; then
+		# 	patcher_args+=("--rip-lib x86_64 --rip-lib x86")
+		# 	if [ "$build_mode" = module ]; then
+		# 		patcher_args+=("--rip-lib arm64-v8a --rip-lib armeabi-v7a --unsigned")
+		# 	else
+		# 		if [ "$arch" = "arm64-v8a" ]; then
+		# 			patcher_args+=("--rip-lib armeabi-v7a")
+		# 		elif [ "$arch" = "arm-v7a" ]; then
+		# 			patcher_args+=("--rip-lib arm64-v8a")
+		# 		fi
+		# 	fi
+		# fi
+
 		if [ "${NORB:-}" != true ] || [ ! -f "$patched_apk" ]; then
 			if ! patch_apk "$stock_apk" "$patched_apk" "${patcher_args[*]}" "${args[cli]}" "${args[ptjar]}"; then
 				epr "Building '${table}' failed!"

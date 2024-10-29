@@ -1,1 +1,135 @@
-[]
+[
+    {
+      "options": [
+        {
+          "key": "IconType",
+          "value": "rounded"
+        },
+        {
+          "key": "BottomMargin",
+          "value": "0.0dip"
+        },
+        {
+          "key": "ChangeTopButtons",
+          "value": false
+        }
+      ],
+      "patchName": "Overlay buttons"
+    },
+    {
+      "options": [
+        {
+          "key": "OutlineIcon",
+          "value": true
+        }
+      ],
+      "patchName": "SponsorBlock"
+    },
+    {
+      "options": [
+        {
+          "key": "InsertPosition",
+          "value": "About"
+        },
+        {
+          "key": "RVXSettingsMenuName",
+          "value": "ReVanced Extended"
+        }
+      ],
+      "patchName": "Settings for YouTube"
+    },
+    {
+      "options": [
+        {
+          "key": "GmsCoreVendorGroupId",
+          "value": "app.revanced"
+        },
+        {
+          "key": "CheckGmsCore",
+          "value": true
+        },
+        {
+          "key": "PackageNameYouTube",
+          "value": "app.rvx.android.youtube"
+        },
+        {
+          "key": "PackageNameYouTubeMusic",
+          "value": "app.rvx.android.youtube.music"
+        }
+      ],
+      "patchName": "GmsCore support"
+    },
+    {
+      "options": [
+        {
+          "key": "CornerRadius",
+          "value": "8.0dip"
+        },
+        {
+          "key": "BackgroundColor",
+          "value": "?ytChipBackground"
+        },
+        {
+          "key": "StrokeColor",
+          "value": "none"
+        }
+      ],
+      "patchName": "Force snackbar theme"
+    },
+    {
+      "options": [
+        {
+          "key": "AppIcon",
+          "value": "mmt"
+        },
+        {
+          "key": "ChangeHeader",
+          "value": true
+        },
+        {
+          "key": "CustomHeader",
+          "value": "mmt/header"
+        },
+        {
+          "key": "ChangeSplashIcon",
+          "value": true
+        },
+        {
+          "key": "RestoreOldSplashAnimation",
+          "value": true
+        }
+      ],
+      "patchName": "Custom branding icon for YouTube"
+    },
+    {
+      "options": [
+        {
+          "key": "AppName",
+          "value": "YouTube"
+        }
+      ],
+      "patchName": "Custom branding name for YouTube"
+    },
+    {
+      "options": [
+        {
+          "key": "ExtendedIcon",
+          "value": "Extension"
+        }
+      ],
+      "patchName": "Visual preferences icons"
+    },
+    {
+        "options": [
+          {
+            "key": "DarkThemeBackgroundColor",
+            "value": "@android:color/black"
+          },
+          {
+            "key": "LightThemeBackgroundColor",
+            "value": "@android:color/white"
+          }
+        ],
+        "patchName": "Theme"
+      }
+]
