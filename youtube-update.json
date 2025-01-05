@@ -1,6 +1,6 @@
 {
-  "version": "v19.16.39 (33)",
-  "versionCode": 33,
-  "zipUrl": "https://github.com/yimiantw/revanced-magisk-module/releases/download/33/youtube-anddea-revanced-magisk-v19.16.39-all.zip",
+  "version": "v19.44.39 (patches: 3.1.0)",
+  "versionCode": 34,
+  "zipUrl": "https://github.com/yimiantw/revanced-magisk-module/releases/download/34/youtube-revanced-magisk-v19.44.39-arm64-v8a.zip",
   "changelog": "https://raw.githubusercontent.com/yimiantw/revanced-magisk-module/update/build.md"
 }
